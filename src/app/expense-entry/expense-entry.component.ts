@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./expense-entry.component.scss']
 })
 export class ExpenseEntryComponent implements OnInit {
+  componentHint = "This is one way binding";
   title: string;
   Constructor(){}
   ngOnInit(): void {
-    this.title = "Expense Entry"
+    this.title = "Expense Entry";
   }
 
 }
