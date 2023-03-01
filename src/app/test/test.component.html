@@ -7,3 +7,7 @@
 <button on-click="showData($event)" type="button" class="btn btn-primary"
         [class.red-background]="applyRed">Edit
 </button>
+
+<input
+  type="text" [(ngModel)]="componentHint">
+<p>Two way binding! Hello {{ componentHint }}!</p>
