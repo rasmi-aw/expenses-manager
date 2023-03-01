@@ -8,16 +8,10 @@ import {Component, OnInit} from '@angular/core';
 export class ExpenseEntryComponent implements OnInit {
   title: string;
 
-  componentHint = 'This is one way binding';
-
   Constructor() {
   }
 
   ngOnInit(): void {
     this.title = 'Expense Entry';
-  }
-
-  showData($event) {
-    console.log($event);
   }
 }
