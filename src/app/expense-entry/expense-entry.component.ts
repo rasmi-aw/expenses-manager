@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-expense-entry',
@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ExpenseEntryComponent implements OnInit {
   componentHint = 'This is one way binding';
   title: string;
-  Constructor() {}
+
+  Constructor() {
+  }
+
   ngOnInit(): void {
     this.title = 'Expense Entry';
+  }
+
+  showData($event) {
+    console.log($event);
   }
 }
