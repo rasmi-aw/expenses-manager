@@ -10,6 +10,7 @@ export class TestComponent implements OnInit {
   componentHint = 'This is one way binding for test component';
   componentAttr = 'attribute value test';
   componentClass = 'bg-dark';
+  applyRed = true;
 
   ngOnInit(): void {
   }

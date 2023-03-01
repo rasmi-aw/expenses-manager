@@ -1,5 +1,9 @@
 <h1>{{componentHint}}</h1>
 <button on-click="showData($event)" type="button" class="btn btn-primary"
         [value]="componentProp" [attr.componentAttr]="componentAttr"
-        [class]="componentClass">Edit
+        [class]="componentClass">Dark Edit
+</button>
+
+<button on-click="showData($event)" type="button" class="btn btn-primary"
+        [class.red-background]="applyRed">Edit
 </button>
