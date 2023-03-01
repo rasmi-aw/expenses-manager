@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class TestComponent implements OnInit {
   componentProp = 'componentProp';
   componentHint = 'This is one way binding for test component';
+  componentAttr = 'attribute value';
 
   ngOnInit(): void {
   }
