@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./test.component.scss']
 })
 export class TestComponent implements OnInit {
-
+  componentProp = 'componentProp';
   componentHint = 'This is one way binding for test component';
 
   ngOnInit(): void {
