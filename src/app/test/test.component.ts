@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TestComponent implements OnInit {
   componentProp = 'componentProp';
-  componentHint = 'This is one way binding for test component';
+  componentHint = 'This is two way binding for test component';
   componentAttr = 'attribute value test';
   componentClass = 'bg-dark';
   applyRed = true;
