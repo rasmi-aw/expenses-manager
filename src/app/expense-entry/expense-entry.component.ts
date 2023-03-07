@@ -8,14 +8,14 @@ import {ExpenseEntry} from '../expense-entry';
 })
 export class ExpenseEntryComponent implements OnInit {
   title: string;
-  entry: ExpenseEntry;
+  expenseEntry: ExpenseEntry;
 
   Constructor() {
   }
 
   ngOnInit(): void {
     this.title = 'Expense Entry';
-    this.entry = {
+    this.expenseEntry = {
       id: 1,
       item: 'Pizza',
       amount: 21,

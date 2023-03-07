@@ -4,7 +4,8 @@
     <div class="col-lg-12 text-center" style="padding-top: 20px;">
       <div class="container" style="padding-left: 0px; padding-right: 0px;">
         <div class="row">
-          <div class="col-sm" style="text-align: left;"> {{ title }}
+          <div class="col-sm" style="text-align: left;">
+            {{ title }}
           </div>
           <div class="col-sm" style="text-align: right;">
             <button type="button" class="btn btn-primary">Edit</button>
@@ -17,7 +18,7 @@
             <strong><em>Item:</em></strong>
           </div>
           <div class="col" style="text-align: left;">
-            Pizza
+            {{ expenseEntry.item }}
           </div>
         </div>
         <div class="row">
@@ -25,7 +26,7 @@
             <strong><em>Amount:</em></strong>
           </div>
           <div class="col" style="text-align: left;">
-            20
+            {{ expenseEntry.amount }}
           </div>
         </div>
         <div class="row">
@@ -33,7 +34,7 @@
             <strong><em>Category:</em></strong>
           </div>
           <div class="col" style="text-align: left;">
-            Food
+            {{ expenseEntry.category }}
           </div>
         </div>
         <div class="row">
@@ -41,7 +42,7 @@
             <strong><em>Location:</em></strong>
           </div>
           <div class="col" style="text-align: left;">
-            Zomato
+            {{ expenseEntry.location }}
           </div>
         </div>
         <div class="row">
@@ -49,11 +50,10 @@
             <strong><em>Spend On:</em></strong>
           </div>
           <div class="col" style="text-align: left;">
-            June 20, 2020
+            {{ expenseEntry.spendOn }}
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<app-test></app-test>
