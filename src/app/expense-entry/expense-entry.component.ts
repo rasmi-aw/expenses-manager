@@ -9,12 +9,14 @@ import {ExpenseEntry} from '../expense-entry';
 export class ExpenseEntryComponent implements OnInit {
   title: string;
   expenseEntry: ExpenseEntry;
+  editClass: string;
 
   Constructor() {
   }
 
   ngOnInit(): void {
     this.title = 'Expense Entry';
+    this.editClass = 'btn-success';
     this.expenseEntry = {
       id: 1,
       item: 'Pizza',
