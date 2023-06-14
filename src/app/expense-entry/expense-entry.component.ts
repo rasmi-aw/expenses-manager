@@ -10,6 +10,7 @@ export class ExpenseEntryComponent implements OnInit {
   title: string;
   expenseEntry: ExpenseEntry;
   editClass: string;
+  input: string;
 
   Constructor() {
   }
@@ -17,6 +18,7 @@ export class ExpenseEntryComponent implements OnInit {
   ngOnInit(): void {
     this.title = 'Expense Entry';
     this.editClass = 'btn-success';
+    this.input = 'yes';
     this.expenseEntry = {
       id: 1,
       item: 'Pizza',

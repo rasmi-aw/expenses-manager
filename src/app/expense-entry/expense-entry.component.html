@@ -8,7 +8,9 @@
             <h5>{{ title }}</h5>
           </div>
           <div class="col-sm" style="text-align: right;">
-            <button type="button" class="btn" [class]="editClass" [class.bold-text]="true" on-click="edit($event)">Edit</button>
+            <button type="button" class="btn" [class]="editClass" [class.bold-text]="true" on-click="edit($event)">
+              Edit
+            </button>
           </div>
         </div>
       </div>
@@ -55,5 +57,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="input">
+    Hello
+    <h3>{{input}}</h3>
   </div>
 </div>
