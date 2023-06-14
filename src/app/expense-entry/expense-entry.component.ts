@@ -24,4 +24,9 @@ export class ExpenseEntryComponent implements OnInit {
       spendOn: new Date(2020, 6, 1, 10, 10, 10), createdOn: new Date(2020, 6, 1, 10, 10, 10),
     };
   }
+
+  edit($event: any) {
+    console.log('edit clicked');
+    console.log($event.target.value);
+  }
 }
